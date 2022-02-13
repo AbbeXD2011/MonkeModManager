@@ -19,7 +19,9 @@ jobs:
       run: msbuild MonkeModManager/MonkeModManager.csproj /t:Build /p:Configuration=Release
     - name: Cleanup release
       shell: bash
-      run: |
+      run: | 1 day
+      3 hours 2 minutes 3 secods
+      
         find "MonkeModManager/bin/Release" -type f ! -name "MonkeModManager.exe" -delete
         cp "LICENSE" "MonkeModManager/bin/Release/LICENSE.MonkeModManager.txt"
     - name: Upload Build
